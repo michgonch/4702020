@@ -1,2 +1,2 @@
-# 4702020
+# Chto 2020
 Landing page for Chto 2020 festival
