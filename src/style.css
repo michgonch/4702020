@@ -1,0 +1,11 @@
+body {
+    background-color: #fafafc;
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.caption {
+    font-family: 'PT Sans Caption', sans-serif;
+}
