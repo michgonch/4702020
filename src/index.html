@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>ЧТО ' soundscape performance</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>ЧТО ' soundscape performance</title>
 </head>
 <body>
     <header class="page-header">
@@ -64,9 +67,39 @@
                 Место проведения ЧТО 2081: пески — ледникового происхождения, принесённые туда водными потоками из-под отсупающих ледников около 500 000 лет назад. "Пустыня" площадью 12 квадратных километорв находится рядом с хутором Морозовский Верхнедоского района и ровноудалена от Воронежа, Ростова-на-Дону и Волгограда примерно на 400 километров.
             </p>
         </section>
-        <!-- <section class="slideshow">
-            S L I D E S H O W
-        </section> -->
+        <div class="slideshow">
+            <div class="fotorama"
+                data-autoplay="3000"
+                data-allowfullscreen="native">
+                <a href="img/slideshows/01.jpg"></a>
+                <a href="img/slideshows/02.jpg"></a>
+                <a href="img/slideshows/03.jpg"></a>
+                <a href="img/slideshows/04.jpg"></a>
+                <a href="img/slideshows/05.jpg"></a>
+                <a href="img/slideshows/06.jpg"></a>
+                <a href="img/slideshows/07.jpg"></a>
+                <a href="img/slideshows/08.jpg"></a>
+                <a href="img/slideshows/09.jpg"></a>
+                <a href="img/slideshows/10.jpg"></a>
+                <a href="img/slideshows/11.jpg"></a>
+                <a href="img/slideshows/12.jpg"></a>
+                <a href="img/slideshows/13.jpg"></a>
+                <a href="img/slideshows/14.jpg"></a>
+                <a href="img/slideshows/15.jpg"></a>
+                <a href="img/slideshows/16.jpg"></a>
+                <a href="img/slideshows/17.jpg"></a>
+                <a href="img/slideshows/18.jpg"></a>
+                <a href="img/slideshows/19.jpg"></a>
+                <a href="img/slideshows/20.jpg"></a>
+                <a href="img/slideshows/21.jpg"></a>
+                <a href="img/slideshows/22.jpg"></a>
+                <a href="img/slideshows/23.jpg"></a>
+                <a href="img/slideshows/24.jpg"></a>
+                <a href="img/slideshows/25.jpg"></a>
+                <a href="img/slideshows/26.jpg"></a>
+                <a href="img/slideshows/27.jpg"></a>
+            </div>
+        </div>
         <section class="tickets" id="tickets">
             <div class="tickets__text">
                 <p>
@@ -98,7 +131,7 @@
                     <strong>Так же можно осуществить перевод на карту Сбербанка</strong> 4276130018490940 (при переводе обязателно указывайте свои ФИО и количество билетов).
                 </p>
             </div>
-            <img src="./img/tickets__map.jpg" alt="Зоны расположения на карте" class="tickets__map">
+            <a href="img/tickets__map.jpg" target="_blank" class="tickets__map"><img src="img/tickets__map.jpg" alt="Зоны расположения на карте"></a>
         </section>
         <section class="transfer" id="transfer">
             <p>
@@ -182,7 +215,7 @@
             <p>+79081303304</p>
             <p>+79092143119</p>
         </div>
-        <ul>
+        <ul class="page-footer__links">
             <li>#chtoevent</li>
             <li><a target="_blank" href="https://vk.com/chtoevent">vk.com/chtoevent</a></li>
             <li><a target="_blank" href="https://instagram.com/chtoevent">instagram.com/chtoevent</a></li>

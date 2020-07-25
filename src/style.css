@@ -108,6 +108,7 @@ a:visited {
     margin-top: var(--space);
     display: flex;
     justify-content: space-around;
+    background-color: #000;
 }
 
 .location {
@@ -118,6 +119,11 @@ a:visited {
 
 .location__disclaimer {
     color: var(--font-color-secondary);
+}
+
+.slideshow {
+    max-width: 1200px;
+    margin: var(--space) auto 0;
 }
 
 .tickets {
@@ -132,8 +138,14 @@ a:visited {
 }
 .tickets__map {
     width: 40%;
-    object-fit: contain;
     margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.tickets__map img{
+    width: 100%;
+    object-fit: contain;
 }
 
 .transfer {
@@ -275,4 +287,12 @@ a:visited {
 .page-footer__logo {
     width: 240px;
     height: auto;
+}
+
+.page-footer__links {
+    list-style: none;
+}
+
+.page-footer__links li {
+    margin-bottom: 1em;
 }
