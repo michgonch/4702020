@@ -88,8 +88,8 @@ a:visited {
 .description__map {
     display: block;
     margin: var(--space) 0;
-    max-width: 80vw;
-    max-height: 80vh;
+    width: 800px;
+    height: 800px;
     object-fit: contain;
 }
 
@@ -108,7 +108,7 @@ a:visited {
     margin-top: var(--space);
     display: flex;
     justify-content: space-around;
-    background-color: #000;
+    background-image: url(img/slideshows/09.jpg);
 }
 
 .location {
