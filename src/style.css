@@ -247,6 +247,23 @@ a:visited {
     margin: var(--space) auto 0;
 }
 
+.merch-list {
+    margin-top: var(--space);
+    display: flex;
+    justify-content: space-between;
+}
+
+.merch-list__item {
+    display: block;
+    max-width: 20%;
+    object-fit: contain;
+    transition: 0.2s;
+}
+
+.merch-list__item:hover {
+    transform: scale(1.6);
+}
+
 .page-footer {
     display: flex;
     justify-content: space-around;
