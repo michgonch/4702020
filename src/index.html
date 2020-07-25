@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
     <title>ЧТО ' soundscape performance</title>
 </head>
@@ -11,20 +11,20 @@
     <header class="page-header">
         <nav class="navigation">
             <img src="./img/logo.svg" alt="Логотип Что" class="navigation__logo">
-            <a href="#ref-description" class="navigation__item">Где и когда</a>
-            <a href="#ref-tickets" class="navigation__item">Билеты</a>
-            <a href="#ref-transfer" class="navigation__item">Трансфер</a>
-            <a href="#ref-rules" class="navigation__item">Правила</a>
-            <a href="#ref-merch" class="navigation__item">Мерч</a>
-            <a href="#ref-contacts" class="navigation__item">Контакты</a>
+            <a href="#description" class="navigation__item">Где и когда</a>
+            <a href="#tickets" class="navigation__item">Билеты</a>
+            <a href="#transfer" class="navigation__item">Трансфер</a>
+            <a href="#rules" class="navigation__item">Правила</a>
+            <a href="#merch" class="navigation__item">Мерч</a>
+            <a href="#contacts" class="navigation__item">Контакты</a>
         </nav>
-        <h1>Что . Soundscape performance</h1>
+        <h1 class="page-header__heading">Что . Soundscape performance</h1>
         <p>Вечеринка для интровертов с соблюдением социальной дистанции</p>
         <p>Ambient open air</p>
     </header>
-    <img src="./img/hero.jpg" alt="Фото пустыни" class="hero-image">
+    <img src="./img/hero.jpg" alt="Пустыня" class="hero-image">
     <main>
-        <section class="description" id="ref-description">
+        <section class="description" id="description">
             <p class="description__text description__text_bold">
                 ЧТО — это серия уникальных акустических мероприятий на стыке перформанса, саунд-арта, аудио-экспозиции, музыкального оупенэйра и туризма, проходящая на больших природных ландшафтах, где можно услышать переплетения эмбиента с музыкой эпохи ренессанса, индустриальных шумов с каноничными хоралами, дроуна с авангардом двадцатого века, различной экспериментальной, народной, академической и электронной музыкой.
             </p>
@@ -39,15 +39,17 @@
                 Подробнее о проекте
             </a>
         </section>
-        <section class="reviews">
+        <!-- <section class="reviews">
             <h2 class="reviews__heading">
                 Отзывы
             </h2>
             <p class="reviews__text">
                 Текст отзыва
             </p>
+        </section> -->
+        <section class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t1J_xpBX-FI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/t1J_xpBX-FI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <section class="location">
             <p class="location__text">
                 <strong>Место:</strong> песчаная пустыня Большие Быковские Буруны. 49.879333, 41.420388.
@@ -62,41 +64,43 @@
                 Место проведения ЧТО 2081: пески — ледникового происхождения, принесённые туда водными потоками из-под отсупающих ледников около 500 000 лет назад. "Пустыня" площадью 12 квадратных километорв находится рядом с хутором Морозовский Верхнедоского района и ровноудалена от Воронежа, Ростова-на-Дону и Волгограда примерно на 400 километров.
             </p>
         </section>
-        <section class="slideshow">
+        <!-- <section class="slideshow">
             S L I D E S H O W
+        </section> -->
+        <section class="tickets" id="tickets">
+            <div class="tickets__text">
+                <p>
+                    Площадь пустыни будет разбита на несколько зон: стандартную и престижную "ложу". "Ложа" представляет из себя квадрат 500х500 метров в самом центре пересечения и сосредоточения звука. Другими словами "ложа" аналогична местам в театре, откуда лучше всего просматривается спектакль. Квадрат будет патрулироваться людьми, следящими за порядком и соблюдением тишины в этой зоне.
+                </p>
+                <p>
+                    Прошу обратить ваше внимание на то, что от количества проданных заранее билетов так же зависит: состоится ЧТО вовремя или нет. Если билеты не будут покупаться заведомо, ивент придётся либо перенести, либо отменить вовсе. Поэтому рекомендуется приобрести билеты предварително. Деньги можно вернуть во все дни, кроме дня мероприятия.
+                </p>
+                <p>
+                    <strong>Стоимость билетов:</strong>
+                </p>
+                <p>
+                    Стандартный билет — 1000р., в день мероприятия — 1300р..
+                </p>
+                <p>
+                    Билет в "ложу" — 2000р., в день мероприятия — 2500р. (количество билетов в этой зоне, так же как и места, строго ограничено).
+                </p>
+                <p>
+                    <strong>Купить:</strong> 
+                    <a target="_blank" href="https://vk.com/pnstrt">https://vk.com/pnstrt</a> 
+                    <a target="_blank" href="https://vk.com/app5745705_-180421187">https://vk.com/app5745705_-180421187</a>
+                </p>
+                <p>
+                    <strong>Купить физические билеты в Воронеже:</strong> 
+                    <a target="_blank" href="https://vk.com/rebelheads">https://vk.com/rebelheads</a> 
+                    <a target="_blank" href="https://vk.com/om_vrn">https://vk.com/om_vrn</a>
+                </p>
+                <p>
+                    <strong>Так же можно осуществить перевод на карту Сбербанка</strong> 4276130018490940 (при переводе обязателно указывайте свои ФИО и количество билетов).
+                </p>
+            </div>
+            <img src="./img/tickets__map.jpg" alt="Зоны расположения на карте" class="tickets__map">
         </section>
-        <section class="tickets" id="ref-tickets">
-            <p class="tickets__text">
-                Площадь пустыни будет разбита на несколько зон: стандартную и престижную "ложу". "Ложа" представляет из себя квадрат 500х500 метров в самом центре пересечения и сосредоточения звука. Другими словами "ложа" аналогична местам в театре, откуда лучше всего просматривается спектакль. Квадрат будет патрулироваться людьми, следящими за порядком и соблюдением тишины в этой зоне.
-            </p>
-            <p class="tickets__text">
-                Прошу обратить ваше внимание на то, что от количества проданных заранее билетов так же зависит: состоится ЧТО вовремя или нет. Если билеты не будут покупаться заведомо, ивент придётся либо перенести, либо отменить вовсе. Поэтому рекомендуется приобрести билеты предварително. Деньги можно вернуть во все дни, кроме дня мероприятия.
-            </p>
-            <p class="tickets__text">
-                <strong>Стоимость билетов:</strong>
-            </p>
-            <p class="tickets__text">
-                Стандартный билет — 1000р., в день мероприятия — 1300р..
-            </p>
-            <p class="tickets__text">
-                Билет в "ложу" — 2000р., в день мероприятия — 2500р. (количество билетов в этой зоне, так же как и места, строго ограничено).
-            </p>
-            <p class="tickets__text">
-                <strong>Купить:</strong> 
-                <a href="https://vk.com/pnstrt">https://vk.com/pnstrt</a> 
-                <a href="https://vk.com/app5745705_-180421187">https://vk.com/app5745705_-180421187</a>
-            </p>
-            <p class="tickets__text">
-                <strong>Купить физические билеты в Воронеже:</strong> 
-                <a href="https://vk.com/rebelheads">https://vk.com/rebelheads</a> 
-                <a href="https://vk.com/om_vrn">https://vk.com/om_vrn</a>
-            </p>
-            <p class="tickets__text">
-                <strong>Так же можно осуществить перевод на карту Сбербанка</strong> 4276130018490940 (при переводе обязателно указывайте свои ФИО и количество билетов).
-            </p>
-            <img src="./img/location.jpg" alt="Зоны расположения на карте" class="tickets__map">
-        </section>
-        <section class="transfer" id="ref-transfer">
+        <section class="transfer" id="transfer">
             <p class="transfer__text">
                 К месту будет осуществляться трансфер на современных автобусах с кондиционерами и классными картинками по телевизору. В ваших же интересах забронировать и выкупить места заранее, чтобы эти автобусы не пришлось отменять. Если до опреедлённого момента осанется много свободных кресел, я дам отбой.
             </p>
@@ -122,7 +126,7 @@
                 <strong>Гостям из других городов:</strong> обращаться к организаторам <a href="https://vk.com/chtoevent">https://vk.com/chtoevent</a>
             </p>
         </section>
-        <section class="rules" id="ref-rules">
+        <section class="rules" id="rules">
             <h2>На ЧТО действуют два основных правила — пунктуальность и тишина.</h2>
             <div class="rule">
                 <img src="" alt="" class="rule__icon">
@@ -161,7 +165,7 @@
                 </p>
             </div>
         </section>
-        <section class="merch" id="ref-merch">
+        <section class="merch" id="merch">
             <p class="merch__text">
                 Прямо сейчас и на самом ивенте можно приобрести футболки с репухами и "закосом под джой дивижн".
             </p>
@@ -175,7 +179,7 @@
     </main>
     <footer>
         <img src="./img/logo.svg" alt="Логотип Что" class="logo-footer">
-        <div class="contacts" id="ref-contacts">
+        <div class="contacts" id="contacts">
             <p>Аникин Антон</p>
             <p>[автор проекта]</p>
             <p>razaa@mail.ru</p>

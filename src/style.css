@@ -1,22 +1,23 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+:root {
+    --font-color: #333;
+    --font-color-secondary: #999;
+    --bg-color: #fafafa;
+    --mt: 4vw;
+}
 
-    background-color: #fafafc;
+body {
+    background-color: var(--bg-color);
     padding: 0;
     margin: 0;
-
-    font-family: 'PT Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #222;
+    color: var(--font-color);
 }
 
 .page-header {
-    width: 80vw;
-
-    font-family: 'PT Sans Caption', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
     text-transform: uppercase;
     letter-spacing: 0.4em;
 }
@@ -24,40 +25,37 @@ body {
 .navigation {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
     height: 8em;
 }
 
 .navigation__logo {
-    width: 100px;
+    width: 120px;
 }
 
 .navigation__item {
     margin-left: 1em;
-    color: #222;
+    color: var(--font-color);
+    font-weight: bold;
     text-decoration: none;
 }
 
-.page-header h1 {
-    margin: 1em 0;
-    font-size: 1em;
-    letter-spacing: 1em;
+.navigation__item:hover {
+    color: var(--font-color-secondary)
 }
 
+.page-header__heading {
+    margin-top: 4em;
+    font-size: 1em;
+    letter-spacing: 1.2em;
+}
 
 .hero-image {
     display: block;
     width: 100%;
     height: 32vw;
-    margin-top: 4em;
+    margin-top: 8em;
     object-fit: cover;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .description {
@@ -68,7 +66,7 @@ main {
 }
 
 .description__text {
-    max-width: 36em;
+    max-width: 76ch;
 }
 
 .description__text_bold {
@@ -89,10 +87,37 @@ main {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    color: #222;
+    color: var(--font-color);
 }
 
-/* XXX */
+.video {
+    margin-top: 8em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.location {
+    margin: 0 auto;
+    margin-top: 8em;
+    max-width: 76ch;
+}
+
+.location__disclaimer {
+    color: var(--font-color-secondary);
+}
+
+.tickets {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.tickets__text {
+    max-width: 76ch;
+
+}
 .tickets__map {
-    max-width: 50vw;
+    width: 30vw;
+    height: 30vw;
+    display: block;
 }
