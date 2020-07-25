@@ -2,7 +2,8 @@
     --font-color: #333;
     --font-color-secondary: #999;
     --bg-color: #fafafa;
-    --mt: 4vw;
+    --space: 8em;
+    --space-half: calc(var(--space) / 2)
 }
 
 body {
@@ -13,6 +14,14 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: var(--font-color);
+}
+
+a {
+    color: var(--font-color);
+}
+
+a:visited {
+    color: var(--font-color-secondary)
 }
 
 .page-header {
@@ -26,7 +35,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 8em;
+    height: var(--space);
 }
 
 .navigation__logo {
@@ -54,7 +63,7 @@ body {
     display: block;
     width: 100%;
     height: 32vw;
-    margin-top: 8em;
+    margin-top: var(--space);
     object-fit: cover;
 }
 
@@ -62,7 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8em;
+    margin-top: var(--space);
 }
 
 .description__text {
@@ -75,14 +84,14 @@ body {
 
 .description__map {
     display: block;
-    margin: 8em 0;
+    margin: var(--space) 0;
     width: 80vw;
 }
 
 .description__info-link {
     display: block;
     padding: 1em 4em;
-    margin-top: 8em;
+    margin-top: var(--space);
     border: 5px solid #ccc;
     text-transform: uppercase;
     font-weight: bold;
@@ -91,14 +100,14 @@ body {
 }
 
 .video {
-    margin-top: 8em;
+    margin-top: var(--space);
     display: flex;
     justify-content: space-around;
 }
 
 .location {
     margin: 0 auto;
-    margin-top: 8em;
+    margin-top: var(--space);
     max-width: 76ch;
 }
 
@@ -108,7 +117,7 @@ body {
 
 .tickets {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: var(--space) auto 0;
     display: flex;
     justify-content: space-between;
 }
@@ -117,7 +126,80 @@ body {
 
 }
 .tickets__map {
-    width: 30vw;
-    height: 30vw;
+    width: 40%;
+    margin-left: 10%;
+    height: auto;
     display: block;
+}
+
+.transfer {
+    margin: var(--space) auto 0;
+    max-width: 76ch;
+}
+
+.transfer__text-spaced {
+    margin-top: var(--space-half);
+}
+
+.rules {
+    max-width: 1200px;
+    margin: var(--space) auto 0;
+}
+
+.rules__heading {
+    font-size: 1.6em;
+}
+
+.rules-list {
+    margin-top: var(--space-half);
+    display: flex;
+    justify-content: space-between;
+}
+
+.rules-list > div {
+    width: 30%;
+}
+
+.rule-time {
+
+}
+
+.rule-wc {
+    margin-top: var(--space-half);
+}
+
+.rule-equip {
+    margin-top: var(--space-half);
+}
+
+.rule-hot {
+    margin-top: var(--space-half);
+    margin-left: 4em;
+}
+
+.rule-fire {
+    margin-top: var(--space-half);
+    margin-left: 8em;
+}
+
+.rule-silence {
+
+}
+
+.merch {
+    max-width: 1200px;
+    margin: var(--space) auto 0;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: var(--space);
+    padding: var(--space) 10%;
+    background-color: #e1e1e1;
+}
+
+.page-footer__logo {
+    width: 240px;
+    height: auto;
 }
